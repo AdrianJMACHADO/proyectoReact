@@ -20,6 +20,7 @@ import AltaEntrada from "./components/AltaEntrada";
 import ListadoFechaEntrada from "./components/ListadoFechaEntradas";
 import ModificarCliente from "./components/ModificarCliente";
 import ListadoNombreCliente from "./components/ListadoNombreCliente";
+import ModificarEntrada from "./components/ModificarEntrada";
 
 let router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ let router = createBrowserRouter([
       {
         path: 'listadoentradas',
         element: <ListadoEntradas />, 
+      },
+      {
+        path:'modificarentrada/:identrada',
+        element: <ModificarEntrada />,  // Este es un ejemplo de cómo se puede renderizar un componente con props
       },
       {
         path: 'listadofechaentrada',
